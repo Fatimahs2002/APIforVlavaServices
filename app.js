@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 
-// const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 3030;
  app.use(cors());
 
 app.get('/', function (req, res) {
@@ -49,4 +49,4 @@ let ws=wb.Sheets['Sheet1'];
           res.send(data);
 })
 
-app.listen(3000);
+app.listen(PORT);
